@@ -2,896 +2,154 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- External CSS  -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Fontawesome 4 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Bootstrap 3  -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap 3  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+    <title>Document</title>
 </head>
 
+
+
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,500&family=Roboto:wght@300;400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,500&family=Roboto:wght@300;400&display=swap');
 
-  * {
+    * {
 
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family:Georgia, 'Times New Roman', Times, serif; */
-    font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family:Georgia, 'Times New Roman', Times, serif; */
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+
+
+
+    /* Background Image Responsive CSS */
+    body {
+        /* width: 100%;
+height: 400px;
+background-image: url('img.jpg');
+background-repeat: no-repeat;
+background-size: initial; */
+
+        /* width: 100%;
+height: 400px; */
+
+
+
+
+
+        background-image: url('background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+    }
+
+
+     /*pc/laptop min-width = 1200px */
+  @media(min-width:1200px) {
+
+
+    #services-last-img-center{
+
+margin-left:440px;
+/* margin-right:37%; */
+/* margin-right:50px;
+margin-top:50px;
+*/
+
+}
+
+
+ /* Our service Font Size - pc */
+ .services {
+      font-size: 75px;
+      color: white;
+
+    }
 
   }
 
 
+/* Packages Caption  */
 
-
-  /* Background Image Responsive CSS */
-  body {
-    /* width: 100%;
-  height: 400px;
-  background-image: url('img.jpg');
-  background-repeat: no-repeat;
-  background-size: initial; */
-
-    /* width: 100%;
-  height: 400px; */
-
-
-
-
-
-    background-image: url('background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-  }
-
-
-
-
-
-  /* h1 {
-    font-size: 75px;
-    color: white;
-  } */
-
-  p {
+p {
     font-size: 20px;
     /* color: white; */
     color:#222222;
     text-decoration: none;
   }
 
-  h3 {
-    font-size: 20px;
-    color: white;
-  }
 
 
-  ul li {
 
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+/* Tablet max-width = 768px */
 
+  @media(max-width:768px) {
 
-  }
 
-  ul li a {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+#services-last-img-center{
 
-  }
+margin-left:0px;
+/* margin-right:37%; */
+/* margin-right:50px;
+margin-top:50px;
+*/
 
+}
 
 
+/* Our service Font Size - pc */
+.services {
+  font-size: 55px;
+  color: white;
 
+}
 
+}
 
 
-  .navbar-brand {
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-  }
 
-  .icon-bar {
-    background-color: white;
-    /* Android menu size - padding-top */
-    padding-top: 4px;
-    /* padding-bottom: 3px; */
-    padding-right: 15px;
-    padding-left: 15px;
-    /* font-size: 100px; */
 
-  }
 
-  .banner {
 
-    width: 48%;
 
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 30px;
-    /* padding-top: 100px;
-    margin-bottom: 15px; */
 
-  }
 
-  .banner2 {
-    margin-left: 195px;
 
 
 
-    /* padding-top: 100px; */
-    /* margin-top:250px; */
-    /* margin-top:300px; */
+@media(min-width:576px) {
 
 
 
-    /* width:26%; */
-    width: 30%;
-  }
 
 
-  #footer {
-    padding: 25px;
-    background-color: #f4c430;
-    border-radius: 50%;
+/* Our service Font Size - pc */
+.services {
+  font-size: 45px;
+  color: white;
 
-  }
+}
 
-
-
-
-
-
-  /*pc/laptop min-width = 1170px */
-  @media(min-width:1170px) {
-
-    ul li a {
-      border: 100%;
-      /* border-radius: 5px; */
-      background-color: #f4c430;
-      /* margin-left: 5px;
-      margin-right: 5px; */
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 20px;
-      border-radius: 70px;
-
-    }
-
-    #navbar-logo {
-      margin-top: 20px;
-      font-size: 30px;
-    }
-
-    /* Newsletters form sizing --PC */
-    .form-control.input-lg {
-      /* border:100%; */
-      /* margin-top:500px; */
-      height: 55px;
-      outline-color: none;
-      /* border-radius: 10px; */
-      border-radius: 50px;
-
-    }
-
-    /* Newsletters form Subscribe button sizing --PC */
-    #subscribe-btn {
-      /* border:100%; */
-
-      border: none;
-      height: 55px;
-      font-weight: bolder;
-      font-size: 20px;
-      background-color: #f4c430;
-
-
-      /* border-radius:10px; */
-    }
-
-    .firstname {
-      margin-left: 15px;
-      font-size: 70px;
-
-    }
-
-    .lastname {
-
-      margin-left: 15px;
-      font-size: 70px;
-
-    }
-
-    /* Our service Font Size - pc/tab */
-    .services {
-      font-size: 75px;
-      color: white;
-
-    }
-
-    #services-last-img-center{
-
-      margin-left:440px;
-      /* margin-right:37%; */
-      /* margin-right:50px;
-      margin-top:50px;
-  */
-
-    }
-
-
-  }
-
-
-  /* Tablet max width 1168px */
-
-  @media(max-width:1172px) {
-
-    /* ul li{
-    margin-left: 5px;
-    margin-right: 5px;
-
-  } */
-
-    ul li a {
-
-      /* border-radius: 5px; */
-      border: 100%;
-      background-color: #f4c430;
-      margin-left: 2px;
-      margin-right: 2px;
-      padding-left: 5px;
-      padding-right: 5px;
-      margin-top: 20px;
-
-      border-radius: 70px;
-
-    }
-
-    #navbar-logo {
-      margin-top: 20px;
-      font-size: 30px;
-    }
-
-    /* Newsletters form sizing -- Tablet */
-    .form-control.input-lg {
-      /* border:100%; */
-
-      height: 55px;
-      outline-color: none;
-      /* border-radius: 10px; */
-      border-radius: 50px;
-
-    }
-
-    /* Newsletters form Subscribe button sizing -- Tablet*/
-    #subscribe-btn {
-      /* border:100%; */
-      border: none;
-      height: 55px;
-      font-weight: bolder;
-      font-size: 20px;
-      background-color: #f4c430;
-
-
-      /* border-radius:10px; */
-    }
-
-    .firstname {
-      margin-left: 15px;
-      font-size: 70px;
-
-    }
-
-    .lastname {
-
-      margin-left: 15px;
-      font-size: 70px;
-
-    }
-
-    /* Our service Font Size - tablet */
-    .services {
-      font-size: 75px;
-      color: white;
-
-    }
-
-
-  }
-
-
-
-
-
-  /* android/ios max-width 952px */
-
-  @media(max-width:952px) {
-
-
-
-    /* Newsletters form sizing -android/ios*/
-
-    .form-control.input-lg {
-
-
-      height: 55px;
-      outline-color: none;
-
-      border-radius: 50px;
-
-    }
-
-    /* Newsletters form Subscribe button sizing --android/ios */
-    #subscribe-btn {
-
-      border: none;
-      height: 55px;
-      font-weight: bolder;
-      font-size: 20px;
-      background-color: #f4c430;
-
-
-      /* border-radius:10px; */
-    }
-
-    .firstname {
-      margin-left: 15px;
-      text-align: justify;
-      /* font-size:60px; */
-      font-size: 60px;
-    }
-
-    .lastname {
-      text-align: justify;
-      /* font-size:56px; */
-      font-size: 60px;
-      margin-left: 15px;
-
-    }
-
-    /* Our service Font Size - android/ios */
-    .services {
-      font-size: 60px;
-      color: white;
-
-    }
-
-
-    #android-menu {
-      margin-top: 25px;
-      border-radius: 40px;
-      /* font-size: 100%; */
-
-    }
-
-
-
-  }
-
-
-
-
-
-  /* ul li a{
-  background-color:aqua;
-  margin-left:20px;
-  margin-right:20px;
-} */
-
-
-  #footer {
-
-    /* background-color:#222222; */
-    /* background-color: #f4c430; */
-    /* background-color: ; */
-    /* background-color:rgb(120, 120, 151); */
-    border-radius: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 33px;
-    padding-top: 15px;
-    padding-right: 33px;
-    padding-bottom: 0px;
-
-    /* padding:25px; */
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-</style>
-
-<style>
-  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap'); */
-
-  .bold {
-    font-weight: 800;
-
-
-  }
-</style>
-
-<style>
-  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,500&display=swap'); */
-
-  .bold2 {
-    font-weight: 500;
-
-  }
-</style>
-
-
-
-<body>
-
-
-
-  <!--navbar menu-->
-
-
-  <nav class="navbar  navbar-me">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed menu-collapsed-button" id="android-menu"
-          data-toggle="collapse" data-target="#navbar-primary-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <!-- id="navbar-logo" class="navbar-brand"  -->
-        <a class="navbar-brand" href="#" id="navbar-logo">
-
-          <img src="logo.png" alt="logo" style="width:70px;">
-
-        </a>
-
-        <!-- LOCAS</a> -->
-      </div>
-
-      <div class="collapse navbar-collapse navbar-right  header-right-menu" id="navbar-primary-collapse">
-        <ul class="nav navbar-nav ">
-          <li class="page-scroll ">
-            <a class="header " href="javascript:" id="about-menu">About</a>
-          </li>
-          <li class="">
-            <!-- Click Services  navbar anchor tag to scroll services element ==> javascript -->
-            <script>
-              function scrollServices() {
-                window.scrollBy(0, 820);
-              }
-              </script>
-
-
-
-
-            <a class="" href="javascript:" id="services-menu"onclick="scrollServices()">Services</a>
-          </li>
-          <li class=" ">
-            <a class=" " href="javascript:" id="Clients-menu">Clients</a>
-          </li>
-          <li class="">
-            <a class=" " href="javascript:" id="contact-menu">Contact</a>
-          </li>
-          <li class="">
-            <!-- <a class=" " href="javascript:" id="project-menu">Projects</a> -->
-            <a class=" " href="javascript:" id="project-menu">Packages</a>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div>
-  </nav>
-
-
-
-
-
-
-  <!-- MATCH MARGIN TOP - 140PX  -->
-
-  <!-- header & newsletter -->
-
-  <!-- margin-top:170px; -->
-
-  <div class="container text-left" style="margin-top:100px;">
-    <!-- line-height 
-    <p class="bold" style="margin-left:15px ;font-size:70px;line-height:65px"><strong>DHUM DHAM</strong>
-    </p> -->
-    <!-- 
-    <p class="firstname"><strong>DHUMDHAM</strong>
-    </p>
-    <p class="lastname"><strong>Event Planner</strong>
-    </p> -->
-
-
-
-
-
-
-
-
-
-
-
-    <img src="dhumdham.png" class="banner" alt="">
-
-
-
-
-    <img src="dhumdham pic.png" class="banner2" alt="">
-
-
-
-
-
-
-
-    <!-- <img src="dhumdham.png" class="banner" alt="" > 
-     <img src="dhumdham pic.png"  alt="" style="margin-left:200px;width:24%" >  -->
-
-    <!-- <br> -->
-
-
-
-
-
-
-
-
-
-    <!-- <br> -->
-
-
-
-    <!-- <p class="" style="margin-left:15px ;font-size: 62px;"><strong><em>EVENT PLANNER</em></strong>
-      </p>  -->
-    <!-- <br> -->
-    <!-- <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-    
-    <!-- <div class="col-lg-5 col-lg-offset-0" style=""> -->
-
-
-
-    <div class="col-lg-5 col-lg-offset-0" style="margin-bottom:100px">
-      <form id="emailForm">
-        <div class="form-group">
-          <div class="input-group">
-
-            <input type="text" class="form-control input-lg" name="email" placeholder="What is your .edu email?">
-            <span class="input-group-btn">
-
-              <button id="subscribe-btn" type="submit" class="btn btn-danger btn-lg ladda-button  "
-                data-style="expand-right" type="submit"><span class="ladda-label">Subscribe</span></button>
-            </span>
-          </div>
-        </div>
-      </form>
-    </div>
-
-  </div>
-
-
-
-
-
-  <br>
-
-  <!-- Horizontial Line   -->
-<div class="container">
-
-<hr style="border:1px solid #f4c430">
-
-
-
-</div>
-  <!-- services  -->
-
-
-
-
-
-
-
-
-
-  <!-- <div class="container text-center"  style="margin-top:120px"> -->
-
-    <div class="container text-center"  style="margin-top:60px">
-
-  
-
-    <h1 class="services" ><strong>Our Services</strong></h1>
-
-    <!-- <div class="panel-default">
-      <div class="panel-heading" style="margin-right:5px ;margin-left:5px ;margin-top:5px ;margin-bottom:5px;padding-left: 33px;padding-top:15px;padding-right: 33px;padding-bottom: 0px;
-        
-        
-        background-color:aliceblue;border-radius: 10px;"> -->
-
-    <br>
-
-
-    <!-- <h3>OUR POPLOUR EVENT ITEMS</h3>
-      <p>The .thumbnail class can be used to display an image gallery.</p>
-      <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
-      <p>Click on the images to enlarge them.</p> -->
-    <div class="row">
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <!-- <a href="https://placehold.it/300x200?text" target="_blank"> -->
-            <a href="img3.jpg" target="_blank">
-                <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <!-- <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> -->
-
-              <p class="text-center" style=""><strong>Stage</strong> </p>
-
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-
-      <div class="col-md-3">
-        <div class="thumbnail">
-            <a href="img3.jpg" target="_blank">
-                <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Photobooth</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <a href="img3.jpg" target="_blank">
-            <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Entry Gate</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <a href="img3.jpg" target="_blank">
-            <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Hindu Biyer Kunjo</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-
-    </div>
-
-
-
-    <div class="row">
-      <div class="col-md-3">
-        <div class="thumbnail">
-            <a href="img3.jpg" target="_blank">
-                <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Palki</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-      <div class="col-md-3">
-        <!-- <div class="thumbnail"> -->
-        <div class="thumbnail">
-            <a href="img3.jpg" target="_blank">
-                <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Ghorargari</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-
-      <div class="col-md-3">
-        <div class="thumbnail">
-            <a href="img3.jpg" target="_blank">
-                <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Welcome Banner</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-      <div class="col-md-3">
-        <div class="thumbnail">
-            <a href="img3.jpg" target="_blank">
-                <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Jhumka</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-    <div class="row">
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <!-- <a href="https://placehold.it/300x200?text" target="_blank"> -->
-            <a href="img3.jpg" target="_blank">
-                <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <!-- <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> -->
-
-              <p class="text-center" style=""><strong>Lighting</strong> </p>
-
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-
-      <div class="col-md-3">
-        <div class="thumbnail">
-            <a href="img3.jpg" target="_blank">
-                <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Sounds System & DJ</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <a href="img3.jpg" target="_blank">
-            <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Bashorghor</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <a href="img3.jpg" target="_blank">
-            <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Car Decoration</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-      </div>
-
-
-
-    </div>
-
-
-
-    <div class="row">
-
-
-
-
-      <div class="col-md-3" id="services-last-img-center">
-
-        <div class="thumbnail">
-          <a href="img3.jpg" target="_blank">
-            <img src="img3.jpg" alt="Fjords" style="width:100%">
-            <div class="caption">
-              <p class="text-center" style=""><strong>Photography</strong> </p>
-            </div>
-          </a>
-        </div>
-        <br>
-
-
-      </div>
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-    <!-- </div>
-    </div> -->
-
-
-    <br>
-    <br>
-
+}
 
 
  
@@ -899,80 +157,170 @@
 
 
 
-    <!-- footer -->
-    <!-- <footer class="container-fluid" > -->
-
-    <!-- <p class="text-left" >Call Number: <b>01867384440</b></p> -->
-
-    <div class="container-fluid" id="footer">
-
-
-      <!-- <div class="panel-default">
-
-        <div class="panel-heading" id="footer" style="margin-right:5px ;margin-left:5px ;margin-top:5px ;margin-bottom:5px;
-        padding-left: 150px;padding-top:150px;padding-right: 150px;padding-bottom: 150px;
-        "> -->
-
-
-      <div class="row">
-
-        <div class="col-md-4 text-justify">
-
-
-          <h2 class="text-center" style="color:white">Follow us </h2>
-          <br>
-
-          <p class="text-center">
-
-
-            <b><a href="#" class="fa fa-facebook"
-                style="font-size:40px;margin-right:10px;margin-left:10px;margin-top:10px;margin-bottom:10px;color:white;text-decoration: none;"></a></b>
-            <b><a href="#" class="fa fa-twitter"
-                style="font-size:40px;margin-right:10px;margin-left:10px;margin-top:10px;margin-bottom:10px;color:white;text-decoration: none;"></a></b>
-            <b><a href="#" class="fa fa-youtube-play"
-                style="font-size:40px;margin-right:10px;margin-left:10px;margin-top:10px;margin-bottom:10px;color:white;text-decoration: none;"></a></b>
-            <b><a href="#" class="fa fa-instagram"
-                style="font-size:40px;margin-right:10px;margin-left:10px;margin-top:10px;margin-bottom:10px;color:white;text-decoration: none;"></a></b>
-          </p>
-          <!-- <br> -->
-          <p class="text-center" style="color:white">All Copyright Reserved 2023</p>
-          <!-- <br>
-              <br> -->
-          <!-- <p class="text-right">Made with <a href="https://github.com/r3k4t" target="_blank">
-                  <span class="love-symbol"> &#10084</span> <span class="rahatkhantusar">Rahat Khan Tusar</span><span class="love-symbol"> &#10084</span></a> </p>
-     -->
-
-
-        </div>
 
 
 
 
 
-        <div class="col-md-4">
 
 
-          <h2 class="text-center" style="color:white">Contact </h2>
-          <br>
+</style>
 
-          <!-- <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odit, asperiores quae similique
-                reiciendis doloremque quidem dicta ipsa deserunt reprehenderit?</p> -->
+<body>
 
-          <!-- <p class="text-justify" style="margin-left:105px">Savar,Dhaka</p>
+
+
+
+
+    <div class="container text-center" style="margin-top:20px">
+
+
+
+        <h1 class="services"><strong>Packages</strong></h1>
+
+        <!-- <div class="panel-default">
+          <div class="panel-heading" style="margin-right:5px ;margin-left:5px ;margin-top:5px ;margin-bottom:5px;padding-left: 33px;padding-top:15px;padding-right: 33px;padding-bottom: 0px;
+            
+            
+            background-color:aliceblue;border-radius: 10px;"> -->
+
+        <br>
+
+
+        <!-- <h3>OUR POPLOUR EVENT ITEMS</h3>
+          <p>The .thumbnail class can be used to display an image gallery.</p>
+          <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+          <p>Click on the images to enlarge them.</p> -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <!-- <a href="https://placehold.it/300x200?text" target="_blank"> -->
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <!-- <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> -->
+
+                            <p class="text-center" style=""><strong>Stage</strong> </p>
+
+                        </div>
+                    </a>
+                </div>
                 <br>
-                <p class="text-justify" style="margin-left:105px">01867384440</p>
+
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Photobooth</strong> </p>
+                        </div>
+                    </a>
+                </div>
                 <br>
-                <p class="text-justify" style="margin-left:105px">info@mail.com</p>
-    
-     -->
-          <blockquote class="text-justify">
-            <p class="" style="color:white">A108 Adam Street
-              New York, NY 535022
-              United States</p>
-            <p class="" style="color:white"><b>Phone: </b>+8801867384440</p>
-            <p class="" style="color:white"><b>Email:</b> info@gmail.com</p>
 
-          </blockquote>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Entry Gate</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Hindu Biyer Kunjo</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Palki</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+            <div class="col-md-3">
+                <!-- <div class="thumbnail"> -->
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Ghorargari</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Welcome Banner</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Jhumka</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+
+
+
 
 
         </div>
@@ -981,16 +329,94 @@
 
 
 
-        <div class="col-md-4">
-          <h2 class="text-center" style="color:white">About</h2>
-          <br>
-          <blockquote class="text-justify">
-            <p class="" style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati perferendis
-              doloremque inventore dolores deleniti?
-            </p>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <!-- <a href="https://placehold.it/300x200?text" target="_blank"> -->
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <!-- <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> -->
+
+                            <p class="text-center" style=""><strong>Lighting</strong> </p>
+
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Sounds System & DJ</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Bashorghor</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Car Decoration</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+            </div>
+
+
+
         </div>
 
-        </blockquote>
+
+
+        <div class="row">
+
+
+
+
+            <div class="col-md-3" id="services-last-img-center">
+
+                <div class="thumbnail">
+                    <a href="img3.jpg" target="_blank">
+                        <img src="img3.jpg" alt="Fjords" style="width:100%">
+                        <div class="caption">
+                            <p class="text-center" style=""><strong>Photography</strong> </p>
+                        </div>
+                    </a>
+                </div>
+                <br>
+
+
+            </div>
 
 
 
@@ -999,40 +425,8 @@
 
 
 
-
-
-
-      </div>
-
-
-
-      <!-- </div>
-      </div> -->
-
-
-
-
-
-
-    </div>
-
-    <!-- 
-</footer> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
+        </div>
 
 
 
